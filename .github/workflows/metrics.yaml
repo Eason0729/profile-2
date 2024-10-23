@@ -18,11 +18,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           user: Eason0729
           template: classic
-          base: ""
+          base: header
           plugin_languages: yes
-          plugin_languages_threshold: 5%
+          plugin_languages_threshold: 1%
           plugin_isocalendar: yes
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime_days: 180
 
