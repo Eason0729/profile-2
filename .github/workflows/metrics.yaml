@@ -16,10 +16,13 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
           user: Eason0729
           template: classic
-          base: header, activity, community
+          base: ""
           plugin_languages: yes
           plugin_languages_threshold: 5%
           plugin_isocalendar: yes
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+
